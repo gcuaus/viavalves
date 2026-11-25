@@ -52,7 +52,7 @@ export default function IndustryDetailPage({ params }: Props) {
   ];
 
   return (
-    <div>
+    <div className="industry-detail-page">
       <PageHeader
         eyebrow="Industry"
         title={`China Valve Sourcing for the ${industry.title}`}

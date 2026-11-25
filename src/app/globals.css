@@ -181,6 +181,28 @@ section {
   line-height: 1.45;
 }
 
+.industry-detail-page .app-section p {
+  display: block;
+  overflow: visible;
+  -webkit-line-clamp: unset;
+  font-size: 14px;
+  line-height: 1.55;
+  color: #334155;
+}
+
+.industry-detail-page .app-section li,
+.industry-detail-page .app-section span {
+  font-size: 14px;
+}
+
+.industry-detail-page .app-section h3 {
+  display: block;
+  overflow: visible;
+  -webkit-line-clamp: unset;
+  font-size: 16px;
+  line-height: 1.35;
+}
+
 .app-dashboard {
   background: #f7f9fc;
   color: #172b26;
@@ -918,14 +940,7 @@ section {
   padding: 10px 12px;
 }
 
-.app-main .app-section .grid > * p,
-.app-main .app-section ul p,
-.app-main .app-section > .container-px > div:first-child > p {
-  display: none !important;
-}
-
 .app-main .app-section .service-benefits > * p {
-  display: block !important;
   color: #1e293b;
   font-size: 14px;
   line-height: 1.55;
