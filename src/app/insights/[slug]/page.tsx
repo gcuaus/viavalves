@@ -214,7 +214,7 @@ export default function InsightDetailPage({ params }: Props) {
                   </div>
                 </div>
 
-                <div className="rounded-2xl border border-border bg-white p-3 sm:p-4 shadow-card">
+                <div>
                   <h4 className="font-display font-semibold text-navy text-base mb-4">
                     Quick Project Inquiry
                   </h4>

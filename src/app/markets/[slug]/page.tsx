@@ -125,7 +125,7 @@ export default function MarketDetailPage({ params }: Props) {
         title={`Plan a shipment to ${market.title}`}
         intro="Let us know your destination port and required valve line items. We will calculate a landed cost comparison and logistics timeline."
       >
-        <div className="max-w-3xl mx-auto rounded-2xl border border-border bg-white p-3 sm:p-4 shadow-card">
+        <div className="max-w-3xl mx-auto">
           <RFQForm />
         </div>
       </Section>

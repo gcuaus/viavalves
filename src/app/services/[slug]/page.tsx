@@ -120,7 +120,7 @@ export default function ServiceDetailPage({ params }: Props) {
         title={`Request a sourcing brief for ${service.title.toLowerCase()}`}
         intro="Tell us your technical parameters and delivery timeframe. We'll respond with a customized engagement plan."
       >
-        <div className="max-w-3xl mx-auto rounded-2xl border border-border bg-white p-3 sm:p-4 shadow-card">
+        <div className="max-w-3xl mx-auto">
           <RFQForm />
         </div>
       </Section>

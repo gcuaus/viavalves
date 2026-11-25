@@ -133,7 +133,7 @@ export default function IndustryDetailPage({ params }: Props) {
         title={`Tell us about your ${industry.title.toLowerCase()} project`}
         intro="Upload your project specs or list your valve quantities. We will prepare an end-to-end China procurement blueprint within 48 hours."
       >
-        <div className="max-w-3xl mx-auto rounded-2xl border border-border bg-white p-3 sm:p-4 shadow-card">
+        <div className="max-w-3xl mx-auto">
           <RFQForm />
         </div>
       </Section>

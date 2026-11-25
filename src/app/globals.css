@@ -779,10 +779,14 @@ section {
 
 .app-inquiry-card {
   padding: 14px;
-  border: 1px solid #e3ebe7;
   border-radius: 18px;
-  background: #fff;
-  box-shadow: 0 4px 16px rgba(27, 55, 45, 0.05);
+  background: #f5f8f2;
+}
+
+.app-inquiry-card .rfq-form {
+  border-radius: 0;
+  padding: 0;
+  background: transparent;
 }
 
 .app-inquiry-heading {
