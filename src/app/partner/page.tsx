@@ -123,7 +123,7 @@ export default function PartnerPage() {
         title="Supplier application form"
         intro="Introduce your factory, manufacturing lines, and certifications to our vendor qualification team."
       >
-        <div className="max-w-3xl mx-auto rounded-2xl border border-border bg-white p-8 md:p-10 shadow-card">
+        <div className="max-w-3xl mx-auto rounded-2xl border border-border bg-white p-3 sm:p-4 shadow-card">
           <RFQForm />
         </div>
       </Section>
