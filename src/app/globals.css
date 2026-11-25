@@ -801,20 +801,130 @@ section {
   font-size: 11px;
 }
 
-.app-rfq-grid > * {
+.rfq-form {
+  container-name: rfq-form;
+  container-type: inline-size;
+  border: 1px solid #d9e4ec;
+  border-radius: 20px;
+  padding: 20px;
+  border-top: 3px solid #0284c7;
+  background: #f5f9fc;
+  color: #1e293b;
+  box-shadow: 0 8px 24px -22px rgba(11, 31, 58, 0.35);
+}
+
+.rfq-fields {
+  grid-template-columns: minmax(0, 1fr);
+  gap: 16px;
+}
+
+.rfq-field {
   min-width: 0;
 }
 
-.app-rfq-grid input,
-.app-rfq-grid select {
-  min-width: 0;
-  padding-left: 8px;
-  padding-right: 8px;
-  font-size: 11px;
+.rfq-label {
+  display: block;
+  margin-bottom: 6px;
+  color: #123d53;
+  font-size: 12px;
+  font-weight: 650;
+  line-height: 1.35;
 }
 
-.app-inquiry-card textarea {
-  font-size: 11px;
+.rfq-label::before {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  margin: 0 7px 1px 0;
+  border-radius: 999px;
+  background: #0284c7;
+  box-shadow: 0 0 0 3px rgba(2, 132, 199, 0.12);
+  content: '';
+}
+
+.rfq-control {
+  width: 100%;
+  min-width: 0;
+  min-height: 44px;
+  border: 1px solid #c9dfe9;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.92);
+  padding: 10px 12px;
+  color: #0b1f3a;
+  font-size: 14px;
+  line-height: 1.4;
+  transition: border-color 160ms ease, background-color 160ms ease, box-shadow 160ms ease;
+}
+
+.rfq-control::placeholder {
+  color: #94a3b8;
+  opacity: 1;
+}
+
+.rfq-control:hover {
+  border-color: #b8cbd8;
+  background: #fff;
+}
+
+.rfq-control:focus-visible {
+  border-color: #0284c7;
+  outline: none;
+  background: #fff;
+  box-shadow: 0 0 0 3px rgba(2, 132, 199, 0.15);
+}
+
+.rfq-select-wrap {
+  position: relative;
+}
+
+.rfq-select {
+  appearance: none;
+  cursor: pointer;
+  padding-right: 40px;
+}
+
+.rfq-select-icon {
+  position: absolute;
+  top: 50%;
+  right: 13px;
+  width: 16px;
+  height: 16px;
+  color: #0284c7;
+  pointer-events: none;
+  transform: translateY(-50%);
+}
+
+.rfq-textarea {
+  min-height: 112px;
+  resize: vertical;
+}
+
+.rfq-submit {
+  min-height: 48px;
+  border: 1px solid #0284c7;
+  border-radius: 12px;
+  background: #0284c7;
+  color: #fff;
+  box-shadow: 0 8px 18px -10px rgba(2, 132, 199, 0.6);
+  transition: transform 160ms ease, box-shadow 160ms ease, filter 160ms ease;
+}
+
+.rfq-submit:hover:not(:disabled) {
+  background: #0369a1;
+  transform: translateY(-1px);
+  box-shadow: 0 12px 22px -12px rgba(2, 132, 199, 0.7);
+}
+
+.rfq-submit:focus-visible {
+  outline: 3px solid rgba(2, 132, 199, 0.35);
+  outline-offset: 3px;
+}
+
+.rfq-error {
+  border: 1px solid #fecaca;
+  border-radius: 10px;
+  background: #fef2f2;
+  padding: 10px 12px;
 }
 
 .app-main .app-section .grid > * p,
@@ -847,6 +957,26 @@ section {
   min-width: 0;
   padding: 12px;
   overflow: hidden;
+}
+
+.app-main .app-section .rfq-fields {
+  grid-template-columns: minmax(0, 1fr) !important;
+  gap: 16px;
+}
+
+.app-main .app-section .rfq-fields > * {
+  padding: 0;
+  overflow: visible;
+}
+
+@container rfq-form (min-width: 560px) {
+  .rfq-fields {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .app-main .app-section .rfq-fields {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  }
 }
 
 .app-section h2 {
