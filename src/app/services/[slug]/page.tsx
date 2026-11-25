@@ -68,7 +68,7 @@ export default function ServiceDetailPage({ params }: Props) {
         title="What you get with Via Valves"
         intro="Direct accountability, transparent communication, and engineering rigor at every stage."
       >
-        <div className="grid gap-5 md:grid-cols-2">
+        <div className="service-benefits grid gap-5 md:grid-cols-2">
           {service.benefits.map((benefit) => (
             <div key={benefit} className="flex gap-4 rounded-xl border border-border bg-white p-6 shadow-card hover-lift">
               <CheckCircle2 className="h-6 w-6 flex-none text-teal mt-0.5" />

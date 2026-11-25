@@ -823,6 +823,13 @@ section {
   display: none !important;
 }
 
+.app-main .app-section .service-benefits > * p {
+  display: block !important;
+  color: #1e293b;
+  font-size: 14px;
+  line-height: 1.55;
+}
+
 .app-main .app-section .eyebrow {
   display: none;
 }
